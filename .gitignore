@@ -3,6 +3,7 @@
 
 # Ignore Gradle's build output directories:
 /build/
+/library/build/
 
 # Ignore IDE-specific directories:
 /.idea/

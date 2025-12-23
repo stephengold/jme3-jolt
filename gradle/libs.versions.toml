@@ -1,0 +1,29 @@
+## catalog of libraries and plugins used to build the jme3-jolt project
+
+[versions]
+
+jme = "3.9.0-alpha5"
+joltjni = "3.5.0"
+
+[libraries]
+
+heart = "com.github.stephengold:Heart:9.2.0"
+
+jme3-core = { module = "org.jmonkeyengine:jme3-core", version.ref = "jme" }
+jme3-desktop = { module = "org.jmonkeyengine:jme3-desktop", version.ref = "jme" }
+jme3-terrain = { module = "org.jmonkeyengine:jme3-terrain", version.ref = "jme" }
+
+jolt-jni-linux64 = { module = "com.github.stephengold:jolt-jni-Linux64", version.ref = "joltjni" }
+jolt-jni-linux64fma = { module = "com.github.stephengold:jolt-jni-Linux64_fma", version.ref = "joltjni" }
+jolt-jni-linuxarm32hf = { module = "com.github.stephengold:jolt-jni-Linux_ARM32hf", version.ref = "joltjni" }
+jolt-jni-linuxarm64 = { module = "com.github.stephengold:jolt-jni-Linux_ARM64", version.ref = "joltjni" }
+jolt-jni-macosx64 = { module = "com.github.stephengold:jolt-jni-MacOSX64", version.ref = "joltjni" }
+jolt-jni-macosxarm64 = { module = "com.github.stephengold:jolt-jni-MacOSX_ARM64", version.ref = "joltjni" }
+jolt-jni-windows64 = { module = "com.github.stephengold:jolt-jni-Windows64", version.ref = "joltjni" }
+jolt-jni-windows64avx2 = { module = "com.github.stephengold:jolt-jni-Windows64_avx2", version.ref = "joltjni" }
+
+oshi-core = "com.github.oshi:oshi-core:6.9.2"
+
+[bundles]
+
+[plugins]
