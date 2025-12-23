@@ -52,6 +52,14 @@ checkstyle {
     toolVersion = libs.versions.checkstyle.get()
 }
 
+tasks.withType<JavaCompile>().all { // Java compile-time options:
+    options.compilerArgs.add("-Xdiags:verbose")
+    options.compilerArgs.add("-Xlint:unchecked")
+    options.encoding = "UTF-8"
+    options.release = 11
+    //options.setDeprecation(true) // to provide detailed deprecation warnings
+}
+
 tasks.jar {
     archiveBaseName.set(baseName)
     doLast {
