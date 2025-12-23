@@ -1,0 +1,38 @@
+---
+# GitHub Actions workflow for commits pushed to the jme3-jolt repo - all branches
+
+name: CI at GitHub
+on: [push, workflow_dispatch]
+
+jobs:
+  Java17-Linux:
+    if: contains(toJson(github.event.commits), '[ci skip] ') == false
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: 17
+      - uses: actions/checkout@v6
+      - uses: gradle/actions/setup-gradle@v5
+      - name: gradlew build
+        run: |
+          ./gradlew build \
+            --console=plain
+
+  Java25-Windows:
+    if: contains(toJson(github.event.commits), '[ci skip] ') == false
+    runs-on: windows-2025
+    steps:
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'liberica'
+          java-version: 25
+      - uses: actions/checkout@v6
+      - uses: gradle/actions/setup-gradle@v5
+      - uses: gradle/actions/wrapper-validation@v4
+      - name: gradlew build
+        run: |
+          ./gradlew build \
+            --console=plain
+        shell: bash
