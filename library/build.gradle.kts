@@ -3,6 +3,7 @@
 import org.gradle.nativeplatform.platform.internal.DefaultNativePlatform
 
 plugins {
+    checkstyle    // to analyze Java sourcecode for style violations
     `java-library`  // to build JVM libraries
 }
 
@@ -45,6 +46,10 @@ dependencies {
 
 configurations.all {
     resolutionStrategy.cacheChangingModulesFor(0, "seconds") // to disable caching of snapshots
+}
+
+checkstyle {
+    toolVersion = libs.versions.checkstyle.get()
 }
 
 tasks.jar {
