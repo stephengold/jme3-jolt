@@ -20,6 +20,21 @@ jobs:
           ./gradlew build \
             --console=plain
 
+  Java21-MacOS:
+    if: contains(toJson(github.event.commits), '[ci skip] ') == false
+    runs-on: macOS-15
+    steps:
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: 21
+      - uses: actions/checkout@v6
+      - uses: gradle/actions/setup-gradle@v5
+      - name: gradlew build
+        run: |
+          ./gradlew build \
+            --console=plain
+
   Java25-Windows:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
     runs-on: windows-2025
