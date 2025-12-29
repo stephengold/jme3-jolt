@@ -113,7 +113,7 @@ public class JoltSimulator extends Simulator {
      */
     public JoltSimulator(int maxBodies, int numBpLayers, int maxJobs,
             int maxBarriers, int numThreads) {
-        super("JoltSim");
+        super("JoltSimulator");
 
         if (!JoltLibraryLoader.isLoaded()) {
             JoltLibraryLoader.load();
