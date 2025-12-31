@@ -114,8 +114,8 @@ public class RigidSynchronizer extends Synchronizer {
     }
 
     /**
-     * Instantiate an enabled synchronizer that's not added to any physics
-     * space, using the specified settings.
+     * Instantiate an enabled synchronizer that's not added to any simulator,
+     * using the specified settings.
      *
      * @param settings the raw body-creation settings to use (not null,
      * unaffected)
