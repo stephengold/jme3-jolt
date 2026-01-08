@@ -4,7 +4,7 @@
 
 checkstyle = "12.3.1"
 jme = "3.9.0-beta1"
-joltjni = "3.5.1"
+joltjni = "3.5.2"
 
 [libraries]
 

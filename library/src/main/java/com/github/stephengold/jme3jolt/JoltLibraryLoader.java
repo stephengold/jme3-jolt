@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2025 Stephen Gold
+ Copyright (c) 2025-2026 Stephen Gold
 
  BSD 3-Clause License
 
@@ -58,7 +58,7 @@ final public class JoltLibraryLoader {
     /**
      * expected version string of the native library
      */
-    final private static String expectedVersion = "3.5.1";
+    final private static String expectedVersion = "3.5.2";
     // *************************************************************************
     // fields
 
