@@ -8,7 +8,7 @@ joltjni = "3.5.2"
 
 [libraries]
 
-heart = "com.github.stephengold:Heart:9.2.0"
+heart = "com.github.stephengold:Heart:9.3.0"
 
 jme3-core = { module = "org.jmonkeyengine:jme3-core", version.ref = "jme" }
 jme3-desktop = { module = "org.jmonkeyengine:jme3-desktop", version.ref = "jme" }
