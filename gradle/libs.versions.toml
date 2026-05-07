@@ -23,7 +23,7 @@ jolt-jni-macosxarm64 = { module = "com.github.stephengold:jolt-jni-MacOSX_ARM64"
 jolt-jni-windows64 = { module = "com.github.stephengold:jolt-jni-Windows64", version.ref = "joltjni" }
 jolt-jni-windows64avx2 = { module = "com.github.stephengold:jolt-jni-Windows64_avx2", version.ref = "joltjni" }
 
-oshi-core = "com.github.oshi:oshi-core:7.0.1"
+oshi-core = "com.github.oshi:oshi-core:7.1.0"
 
 [bundles]
 
