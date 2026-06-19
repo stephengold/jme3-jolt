@@ -13,7 +13,7 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 17
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: gradle/actions/setup-gradle@v6
       - name: gradlew build
         run: |
@@ -28,7 +28,7 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 21
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: gradle/actions/setup-gradle@v6
       - name: gradlew build
         run: |
@@ -43,7 +43,7 @@ jobs:
         with:
           distribution: 'liberica'
           java-version: 26
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: gradle/actions/setup-gradle@v6
       - name: gradlew build
         run: |
