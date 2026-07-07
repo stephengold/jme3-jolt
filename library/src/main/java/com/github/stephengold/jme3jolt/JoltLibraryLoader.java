@@ -58,7 +58,7 @@ final public class JoltLibraryLoader {
     /**
      * expected version string of the native library
      */
-    final private static String expectedVersion = "5.1.0";
+    final private static String expectedVersion = "5.2.0";
     // *************************************************************************
     // fields
 
