@@ -58,7 +58,7 @@ final public class JoltLibraryLoader {
     /**
      * expected version string of the native library
      */
-    final private static String expectedVersion = "6.0.0";
+    final private static String expectedVersion = "6.1.1";
     // *************************************************************************
     // fields
 
@@ -220,7 +220,7 @@ final public class JoltLibraryLoader {
         }
 
         String jjVersion = Jolt.versionString();
-        if (!jjVersion.equals(expectedVersion) && !jjVersion.equals("6.0.2")) {
+        if (!jjVersion.equals(expectedVersion)) {
             stream.println("Expected a v" + expectedVersion
                     + " native library but loaded v" + jjVersion + "!");
         }
