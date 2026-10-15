@@ -115,6 +115,9 @@ final public class JoltLibraryLoader {
             NativeLibraryLoader.registerNativeLibrary(
                     "jolt-jni", platform, assetPath);
         }
+        NativeLibraryLoader.registerNativeLibrary("jolt-jni",
+                Platform.Windows_ARM64,
+                "windows/aarch64/com/github/stephengold/libjoltjni.dll");
 
         NativeLibraryLoader.loadNativeLibrary("jolt-jni", true);
         printLibraryInfo(System.out);
