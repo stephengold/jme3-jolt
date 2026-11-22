@@ -4,7 +4,7 @@
 
 checkstyle = "14.4.0"
 jme = "3.10.0-beta3"
-joltjni = "7.0.0"
+joltjni = "8.0.0"
 
 [libraries]
 
